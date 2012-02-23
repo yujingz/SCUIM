@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="scu.im.bean">
+	<class name="UserInfo" table="userinfo">
+		<id name="id">
+			<generator class="uuid"></generator>
+		</id>
+		<many-to-one name="uid" property-ref="uid"></many-to-one>
+		<property name="picture" type="integer"/>
+		<property name="gender" type="integer"/>
+		<property name="birthday" type="timestamp"/>
+		<property name="nickname"/>
+		<property name="scratch"/>
+		<property name="description"/>
+		<property name="blood" type="integer"/>
+		<property name="email"/>
+		<property name="country"/>
+		<property name="province"/>
+		<property name="city"/>
+		<property name="phone"/>
+		<property name="occupation"/>
+		<property name="pwdQuestion"/>
+		<property name="pwdAnswer"/>
+	</class>
+</hibernate-mapping>

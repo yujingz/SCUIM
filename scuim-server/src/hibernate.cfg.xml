@@ -1,0 +1,29 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/scuim</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">admin</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		
+		
+		<mapping resource="scu/im/bean/User.hbm.xml" />
+		<mapping resource="scu/im/bean/Server.hbm.xml" />
+		<mapping resource="scu/im/bean/UserInfo.hbm.xml" />
+		<mapping resource="scu/im/bean/FriendArray.hbm.xml" />
+		<mapping resource="scu/im/bean/AccountNumber.hbm.xml" />
+		<mapping resource="scu/im/bean/GroupInfo.hbm.xml" />
+		<mapping resource="scu/im/bean/GroupRelation.hbm.xml" />
+		<mapping resource="scu/im/bean/GroupNumber.hbm.xml" />
+		
+		<mapping resource="scu/im/bean/Forum.hbm.xml" />
+		<mapping resource="scu/im/bean/ForumReply.hbm.xml" />
+		<!-- -->
+	</session-factory>
+</hibernate-configuration>

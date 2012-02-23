@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="scuim" extends="struts-default">
+		<action name="register.action" class="scu.im.action.RegisterAction">
+			<result name="success">register.jsp</result>
+			
+		</action>
+<!--
+		<action name="listUser" class="listUserAction">
+			<result name="success">/list.jsp</result>
+		</action>
+		
+		<action name="deleteUser" class="removeUserAction">
+			<result name="success" type="redirect">listUser.action</result>
+		</action>
+		
+		<action name="updatePUser" class="updatePUserAction">
+			<result>/update.jsp</result>
+		</action>
+		
+		<action name="updateUser" class="updateUserAction">
+			<result name="success" type="redirect">listUser.action</result>
+			<result name="input">/update.jsp</result>
+		</action>
+		
+		<action name="generateExcel" class="generateExcelAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename="AllUser.xls"</param>
+				<param name="inputName">downloadFile</param>
+			</result>
+		</action>
+-->
+	</package>
+
+</struts>

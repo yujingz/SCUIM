@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="scu.im.bean">
+	<class name="FriendArray" table="friend_array">
+		<id name="id">
+			<generator class="uuid"></generator>
+		</id>
+		<many-to-one name="uid" property-ref="uid"></many-to-one>
+		<many-to-one name="fid" property-ref="uid"></many-to-one>
+		<property name="fakename" />
+	</class>
+</hibernate-mapping>

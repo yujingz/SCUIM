@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  default-lazy="false" package="scu.im.bean">
+	<class name="ForumReply" table="forum_reply">
+		<id name="id">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="forumId" type="integer"/>
+		<many-to-one name="replyerId" property-ref="uid"></many-to-one>
+		<property name="content"/>
+		<property name="replyTime" type="timestamp" column="reply_time"/>
+	</class>
+</hibernate-mapping>

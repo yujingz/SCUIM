@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="scu.im.bean">
+<class name="GroupNumber" table="group_number">
+  	<id name="id">
+   		<generator class="uuid"/>
+  	</id>
+  	<property column="group_number" generated="never" lazy="false" name="groupNumber" not-null="true" unique="true"/>
+</class>
+</hibernate-mapping>
